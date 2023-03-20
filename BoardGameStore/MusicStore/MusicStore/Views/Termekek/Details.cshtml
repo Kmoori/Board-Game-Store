@@ -1,0 +1,40 @@
+﻿
+@model MusicStore.Models.Termekek
+@{
+    ViewBag.Title = "Termék adatok";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="radiusHatter">
+    <div class="container ">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-6 adatokDiv">
+                    <div>
+                        @foreach (var elem in ViewBag.termek)
+                        {
+                            <p class="adatokSzoveg">
+                                Név: @elem.nev
+                            </p>
+                            <p class="adatokSzoveg">
+                                Tipus: @elem.tipus
+                            </p>
+                            <p class="adatokSzoveg">
+                                Ár:  @String.Format("{0} Ft", elem.ar)
+                            </p>
+                            <p class="button">
+                                @Html.ActionLink("Kosárba", "Kosarba", "Kosar", new { TermekId = elem.Id }, "")
+                            </p>
+                        }
+
+                    </div>
+                </div>
+                <div class="col-6">
+                    @foreach (var elem in ViewBag.termek)
+                    {
+                        <img class="adatokKep" alt="@elem.nev" src="@elem.kep" />
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

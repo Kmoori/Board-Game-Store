@@ -1,0 +1,53 @@
+﻿@model MusicStore.Models.Order
+@{
+    ViewBag.Title = "Fizetés";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm())
+{ 
+    <body class="radiusHatter">
+        <div class="fizetes-stilus">
+            <h2>Lakcím és fizetési adatok</h2>
+            @Html.AntiForgeryToken()
+            <fieldset>
+                <h3>Szállítási adatok:</h3>
+                <label style="margin-right: 150px;" for="vezteknev">Vezetéknév:</label>
+                <label for="keresztnev">Keresztnév:</label><br />
+
+                <input class="balInput" type="text" name="vezteknev" id="" required>
+                <input type="text" name="keresztnev" id="" required><br>
+
+                <label style="margin-right: 192px;" for="varos">Város:</label>
+                <label for="haz">Utca,házszám:</label><br />
+
+                <input class="balInput" type="text" name="varos" id="" required>
+                <input type="text" name="haz" id="" required><br>
+
+                <label style="margin-right: 188px;" for="email">E-mail:</label>
+                <label for="telefon">Telefon:</label><br />
+
+                <input class="balInput" type="email" name="email" id="" required>
+                <input type="text" name="telefon" min="11" id="" required><br>
+
+                <label for="gombok">Fizetési mód:</label><br />
+                <input style="margin-left:20px;" type="radio" name="gombok" value="1" > Utánvét<br />
+                <input style="margin-left:20px; margin-bottom:15px;" type="radio" name="gombok" value="0" id="" checked> Online utalás<br>
+            </fieldset>
+            <fieldset>
+                <legend>Megjegyzés</legend>
+                <p>Ha most beírja a kuponkódot "FREE" akkor olcsóbban tud vásárolni</p>
+                <div class="editor-label">
+                    @Html.Label("Kupon kód:")
+                </div>
+                <div class="editor-field">
+                    @Html.TextBox("PromoCode")
+                </div>
+            </fieldset>
+            <a style="color:#fff;" class="button" href="@Url.Content("~/Checkout/Sikeres")">Megrendelés</a>
+            @*<input type="submit" value="Megrendelés"  />*@
+        </div>
+    </body>
+    }

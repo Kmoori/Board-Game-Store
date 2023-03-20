@@ -1,0 +1,315 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+
+.bejelentkezos-stilus {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.tipusFelsorolas {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+hr {
+    background-color: rgb(70, 84, 163);
+}
+
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.logo-kep {
+    width: 80px;
+    height: 55px;
+}
+
+.fullsize-picture {
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+}
+
+.hatter-picture {
+    width: 100%;
+    height: auto;
+}
+
+#page-header {
+    color: #fff;
+    background-size: 100% auto !important;
+    background: 100% 0 no-repeat;
+    background-size: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+    #page-header .page-width {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        margin-left: -650px;
+        margin-top: 50px;
+        width: 620px;
+        z-index: 10;
+    }
+
+    #page-header .intro {
+        width: 1000px;
+        padding-top: 50px;
+        float: left;
+    }
+
+    #page-header h1 span.first-line {
+        font-size: 100px;
+        padding-left: 10px;
+        color: #fff;
+        display: table;
+        float: none;
+        Background-color: rgba(0,0,0,0.5);
+        background-size: 150%;
+        font-family: Bahnschrift;
+    }
+
+    #page-header .text {
+        font-size: 20px;
+        line-height: 130%;
+        margin-top: 100px;
+        margin-right: 205px;
+        padding-left: 25px;
+        color: #fff;
+        Background-color: rgba(0,0,0,0.5);
+        font-family: Bahnschrift;
+    }
+
+.belso-div {
+    margin: 20px;
+    padding: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+
+.belso-div-text {
+    font-size: 1.3em;
+}
+
+.belso-div-img {
+    width: 100%;
+}
+
+.also-hatter {
+    width: 100%;
+    height: auto;
+}
+
+.termekekKepek {
+    margin: 10px;
+    width: 180px;
+}
+
+.adatokKep {
+    margin-top: 40px;
+    width: 300px;
+    float: right;
+}
+
+.adatokSzoveg {
+    background-color: #fff;
+    border-style: solid;
+    border-color: rgb(70, 84, 163);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 20pt;
+}
+
+.adatokDiv {
+    text-align: center;
+    padding-top: 150px;
+}
+
+.radiusHatter {
+    background: url("Images/radiasHatter.png");
+    height: 100%;
+    width: 100%;
+}
+
+
+.galeria-img {
+    margin: 5px;
+    border: 1px;
+    border-color: grey;
+    float: left;
+    width: 200px;
+}
+
+    .galeria-img:hover {
+        border: 1px solid;
+        border-color: rgb(70, 84, 163);
+    }
+
+    .galeria-img img {
+        width: 100%;
+        height: auto;
+        max-height: 252px;
+    }
+
+    .galeria-img .desc {
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 15px;
+        text-align: center;
+    }
+
+h2, h3 {
+    color: rgb(70, 84, 163);
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+    #header h1 a, h3 em {
+        color: #5E5B54;
+    }
+
+
+a:link, a:visited {
+    color: rgb(70, 84, 163);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #495057;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button, input[type=submit] {
+    clear: both;
+    display: inline-block;
+    padding: 5px;
+    margin-top: 30px;
+    border: 1px;
+    border-radius:0.5em;
+    background: rgb(70, 84, 163);
+    color: #fff;
+    font-weight: bold;
+
+}
+
+    .button a {
+        color: #fff !important;
+    }
+
+.social {
+    margin-left: 20px;
+}
+
+.elerhetosegek {
+    color: white;
+    height: 200px;
+    font-size: larger;
+    font-family: 'Bahnschrift';
+    padding: 10px;
+}
+
+#footer {
+    clear: both;
+    float: right;
+    border-top: 1px dotted #8A8575;
+    border-bottom: 1px dotted #8A8575;
+    font-family: Constantia, Georgia, serif;
+    padding-right: 20px;
+}
+
+.kategoria-td {
+    border-style: solid;
+    padding: 20px;
+    border-color: rgb(70, 84, 163);
+}
+
+.kategoria-table {
+    width: 100%;
+    text-align: center;
+}
+
+.browse_ul_table {
+    font-size: large;
+    margin-top: 20px;
+}
+
+#page-bottom {
+    color: #fff;
+    background-size: 100% auto !important;
+    background: 100% 0 no-repeat;
+    background-size: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+    #page-bottom .page-width {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        margin-left: -680px;
+        margin-top: 50px;
+        width: 620px;
+        z-index: 10;
+    }
+
+    #page-bottom .intro {
+        width: 1000px;
+        float: left;
+    }
+
+    #page-bottom h1 span.first-line {
+        font-size: 25px;
+        color: #fff;
+        margin-bottom: 70px;
+        display: table;
+        font-family: Bahnschrift;
+    }
+
+.fizetes-stilus {
+    margin-top: 30px;
+    margin-left: 500px;
+}
+
+    .fizetes-stilus h2 {
+        padding-bottom: 20px;
+        background-color: #fff;
+    }
+
+    .fizetes-stilus input {
+        border: 1px solid;
+        border-radius: 0.5em;
+        margin-top: 0px;
+    }
+
+    .fizetes-stilus label {
+        margin-top: 15px;
+        background-color: #fff;
+    }
+
+    .fizetes-stilus p {
+        background-color: #fff;
+    }
+
+.balInput {
+    margin-right: 58px;
+}
+
+.kozepre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -220px;
+}

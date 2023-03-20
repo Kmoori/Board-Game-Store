@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Board.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/bootstrap.min.css")" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="@Url.Content("~/Scripts/jquery-1.10.2.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/modernizr-2.6.2.js")" type="text/javascript"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a href="@Url.Content("~")"><img class="logo-kep" src="~/Content/Images/logo3.png" alt="logo" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <h3>Board Game Store</h3>
+        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link" href="@Url.Content("~")">Főoldal</a>
+                <a class="nav-link" href="/Termekek/">Termékeink</a>
+                <a class="nav-link" href="@Url.Content("~/Kosar/Index")">Kosár</a>
+                <a class="nav-link" href="@Url.Content("~/StoreManager/")">Bejelentkezés</a>
+                <a class="nav-link" href="@Url.Content("~/Account/LogOut")">Kijelentkezés</a>
+            </div>
+        </div>
+    </nav>
+    <hr style="margin:0px;" />
+    <div id="main">
+        @RenderBody()
+    </div>
+
+    <div id="footer" class="navbar-fixed-bottom">
+        Készitették: Bajári Patrik, Bauer Dávid Gergő
+    </div>
+    <script>
+        AOS.init({ offset: 200, delay: 50 });
+    </script>
+</body>
+</html>

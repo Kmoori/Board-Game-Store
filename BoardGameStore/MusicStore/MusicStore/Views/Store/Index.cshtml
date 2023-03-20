@@ -1,0 +1,37 @@
+﻿@model IEnumerable<MusicStore.Models.Termekek>
+
+@{
+    ViewBag.Title = "Kategória";
+}
+
+
+
+<div class="container">
+    <table class="kategoria-table">
+        <tr>
+            <td><img style="float:left" class="termekekKepek" alt="kocka" src="~/Content/Images/kocka.png" /></td>
+            <td></td>
+            <td><img style="float:right" class="termekekKepek" alt="palya" src="~/Content/Images/tarsaspalya.png" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="kategoria-td">
+                <h2>Termék kategóriák:</h2>
+
+                @foreach (string elem in ViewBag.vb_kategoriak)
+                {
+                    <ul class="browse_ul_table">
+                        @Html.ActionLink(elem, "Browse", new { tipus = elem })
+                    </ul>
+                }
+
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td ><img style="padding-top:50px" class="termekekKepek" alt="kartyak" src="~/Content/Images/kartyak.png" /></td>
+            <td></td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,13 @@
+﻿@model int
+@{
+    ViewBag.Title = "Sikeres vásárlás";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<body class="radiusHatter">
+    <h2>Sikeres vásárlás!</h2>
+    <p>Köszönjük hogy nálunk vásárolt!</p>
+    <p>
+        Ha szeretne tovább böngészni
+        @Html.ActionLink("Főoldal", "Index", "Home")
+    </p>
+</body>

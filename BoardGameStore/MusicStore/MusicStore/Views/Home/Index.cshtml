@@ -1,0 +1,148 @@
+﻿@model IEnumerable<MusicStore.Models.Album>
+@{
+    //加载布局页面
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Index";
+}
+<!-- Üdvözlés és kép-->
+<div id="page-header">
+    <img class="fullsize-picture" src="~/Content/Images/sakk2.jpg" alt="welcome">
+    <div class="page-width" >
+        <div class="intro">
+            <div>
+                <h1>
+                    <span class="first-line">Társasozz még ma!</span>
+                </h1>
+            </div>
+            <div class="text">
+                <p>
+                    <br />A legjobb társasjátékok egy helyen!<br /><br />
+                    2017 óta várjuk kedves vásárlóinkat oldalunkon.<br /><br />
+                    Kínálatunkban több, mint sok izgalmas társasjáték közül válogathatsz,
+                    hiszen a szórakozás a barátokkal és a szeretteinkkel megosztva a legélvezetesebb! Legyen szó akár az
+                    első társasjátékról, a gondolkodtató játékokról, vagy a bulit kiegészítő társasokról, itt mindent megtalálsz!<br /><br />
+                    Webáruházunkon számos társasjáték közül választhatsz, melyek, mint minden más játék, szintén különböző kategóriákba sorolhatóak. Itt megtalálhatod kedvencedet.
+                    <br /><br />Tipp: Használd a szűrőket, hogy kategória, játékidő, játékosszám, nyelv és ajánlott életkor alapján válogathass játékaink között!<br /><br />
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- szinezett rész 1-->
+<div class="container ">
+    <div class="belso-div">
+        <div class="row">
+            <div class="col-4" data-aos="fade-right">
+                <img class="belso-div-img" src="~/Content/Images/budapestpalya.jpg" alt="kiskep">
+            </div>
+            <div class="col-8">
+                <h2>Társasjátékok</h2>
+                <p class="belso-div-text">
+                    Nálunk mindenféle társasjáték megtalálható ahhoz hogy egész este szórakozással teljen családjával,
+                    barátaival.
+                    Rengeteg fajta társasjátékkal várjuk a vásárlókat, mint például kaland, akció, ügyességi vagy stratégiai.
+                    Ha nem találja meg amit szeretne csak jelezze felénk és mi megpróbáljuk felkutatni.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="belso-div">
+        <div class="row">
+            <div class="col-8">
+                <h2>Kiegészítők</h2>
+                <p class="belso-div-text">
+                    Különböző társasjátékok mellett megtalálhatóak a hozzá tartozó kiegészítők is.
+                    Ha elveszne a dobokockád vagy figurád D&D közben nálunk beszerezhetsz egy újat pillanatok alatt.<br />
+                    Rendelkezésünkre állnak limitált kiadású vagy szezonális társasjátékokhoz is tartozó kiegészítők.
+                </p>
+            </div>
+            <div class="col-4" data-aos="fade-left">
+                <img class="belso-div-img" src="~/Content/Images/figura.png" alt="kiskep">
+            </div>
+        </div>
+    </div>
+    <div class="belso-div">
+        <div class="row">
+            <div class="col-4" data-aos="fade-right">
+                <img class="belso-div-img" src="~/Content/Images/unolapok.jpg" alt="kiskep">
+            </div>
+            <div class="col-8">
+                <h2>Kártyajátékok</h2>
+                <p class="belso-div-text">
+                    A kártyajátékokat szinte az egész világon ismerik. Azért különlegesek, mert egyedül is vagy csapatban is játszhatóak egyaránt.
+                    Másik nagy előnye, hogy kis helyen is elfér méretét tekintve.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12" style="float:">
+                <hr />
+                <p style="text-align: center;">Legkellendőbb:</p>
+                <div class="galeria-img">
+                    <a href="~/Content/Images/tarsas/Monopoly_Budapest.png" target="_blank">
+                        <img src="~/Content/Images/tarsas/Monopoly_Budapest.png" alt="kép">
+                    </a>
+                    <div class="desc">Monopoly Budapest</div>
+                </div>
+                <div class="galeria-img">
+                    <a href="~/Content/Images/tarsas/sheriff.png" target="_blank">
+                        <img src="~/Content/Images/tarsas/sheriff.png" alt="kép">
+                    </a>
+                    <div class="desc">Sheriff</div>
+                </div>
+                <div class="galeria-img">
+                    <a href="~/Content/Images/kartyak/Magyar_Kartya.png" target="_blank">
+                        <img src="~/Content/Images/kartyak/Magyar_Kartya.png" alt="kép">
+                    </a>
+                    <div class="desc">Magyar kártya</div>
+                </div>
+                <div class="galeria-img">
+                    <a href="~/Content/Images/kartyak/Magyar_Nepmesek.png" target="_blank">
+                        <img src="~/Content/Images/kartyak/Magyar_Nepmesek.png" alt="kép">
+                    </a>
+                    <div class="desc">Magyar Népmesék</div>
+                </div>
+                <div class="galeria-img">
+                    <a href="~/Content/Images/kiegek/figurak.png" target="_blank">
+                        <img src="~/Content/Images/kiegek/figurak.png" alt="kép">
+                    </a>
+                    <div class="desc">Limitált figurák</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="page-bottom">
+    <img class="fullsize-picture" src="~/Content/Images/bagoly.jpg" alt="welcome">
+    <div class="page-width">
+        <div class="intro">
+            <div>
+                <h1>
+                    <span class="first-line">
+                        Széles választékkal és alacsony árakkal várjuk vevőinket.<br />
+                        Elérhetőségek:<br />
+                        Tel: 06991234567<br />
+                        Cím: Zedváros, Babits Mihály u. 19<br />
+                        e-mail:boardgames@huponthu.hu
+                    </span>
+                </h1>
+            </div>
+            <div >
+                    <a href="https://hu-hu.facebook.com/"><img src="~/Content/Images/Social/facebook.png" alt="facebook" /></a>
+                    <a class="social" href="https://www.youtube.com/"><img src="~/Content/Images/Social/utube.png" alt="youtube" /></a>
+                    <a class="social" href="https://www.tumblr.com/"><img src="~/Content/Images/Social/tumblr.png" alt="tumblr" /></a>
+                    <a class="social" href="https://hu.pinterest.com/"><img src="~/Content/Images/Social/pinterest.png" alt="pinterest" /></a>
+                    <a class="social" href="https://twitter.com/"><img src="~/Content/Images/Social/twitter.png" alt="twitter" /></a>
+                    <br /><br /><br />
+            </div>
+        </div>
+    </div>
+</div>

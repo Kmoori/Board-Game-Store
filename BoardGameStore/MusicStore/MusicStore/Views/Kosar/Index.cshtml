@@ -1,0 +1,99 @@
+﻿@model MusicStore.ViewModels.ShoppingCartViewModel
+@{
+    ViewBag.Title = "Kosár";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<body class="radiusHatter">
+    <div class="container">
+        <br />
+        <div>
+            <h3>Az Ön kosara:</h3>
+        </div>
+        <br />
+        <div id="update-message">
+        </div>
+
+        <table class="table" style="background-color:#fff;">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Név</th>
+                    <th scope="col">Ár</th>
+                    <th scope="col">Mennyiség</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    int index = 0;
+                    foreach (var item in ViewBag.vb_Termek)
+                    {
+                        <tr>
+                            <td>
+                                @item.nev
+                            </td>
+                            <td>
+                                @item.ar
+                            </td>
+
+                            <td>
+                                @ViewBag.vb_kosarban[index].Mennyiseg
+                            </td>
+                            <td>
+                                @Html.ActionLink("Eltávolítás a kosárból", "Torles", "Kosar", new { torlendoId = ViewBag.vb_kosarban[index].CartId }, "")
+                            </td>
+                        </tr>
+                        index++;
+                    }
+                }
+
+            </tbody>
+        </table>
+        <h2>Összesen: @ViewBag.Ar Ft</h2>
+        <p class="button">
+            @Html.ActionLink("Fizetés", "AddressAndPayment", "Checkout")
+        </p>
+    </div>
+</body>
+@*<script type="text/javascript">
+        $(function () {
+            // Document.ready -> link up remove event handler
+            $(".RemoveLink").click(function () {
+                var recordDelete = $(this).attr("data-id");
+                if (recordDelete != '') {
+                    // Perform the ajax post
+                    $.post("/ShoppingCart/RemoveFromCart"
+                        , { id: recordDelete }
+                        , function (data) {
+                            // Successful requests get here
+                            // Update the page elements
+                            if (data.ItemCount == 0) {
+                                $('#row-' + data.DeleteId).fadeOut('slow');
+                            }
+                            else {
+                                $('#item-count-' + data.DeleteId).text(data.ItemCount);
+                            }
+                            $('#cart-total').text(data.CartTotal);
+                            $('#update-message').text(data.Message);
+                            $('#cart-status').text('Cart (' + data.CartCount + ')');
+                        });
+                }
+            });
+        });
+        function handleUpdate() {
+            // Load and deserialize the returned JSON data
+            var json = context.get_data();
+            var data = Sys.Serialization.JavaScriptSerializer.deserialize(json);
+            // Update the page elements
+            if (data.ItemCount == 0) {
+                $('#row-' + data.DeleteId).fadeOut('slow');
+            } else {
+                $('#item-count-' + data.DeleteId).text(data.ItemCount);
+            }
+            $('#cart-total').text(data.CartTotal);
+            $('#update-message').text(data.Message);
+            $('#cart-status').text('Cart (' + data.CartCount + ')');
+        }
+    </script>*@
+
