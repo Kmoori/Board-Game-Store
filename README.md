@@ -2,7 +2,7 @@
 
 Társasjáték webshop amelyet egy MusicStore alapból kellett átalakítani a saját termékötletünkre és saját design alapján. 
 
-A projekthez készítettem egy adatbázist valamint a Backend és Frontend kódot is én programoztam.
+A projekthez készítettem egy adatbázist, valamint a Backend és Frontend kódot is én programoztam.
 
 
 ## Főoldal kinézete
@@ -11,7 +11,7 @@ A projekthez készítettem egy adatbázist valamint a Backend és Frontend kódo
 
 ## Termék kategóriák
 
-A Termék kategóriák automatikusan jelennek az adatbázis alapján és egy-egy kategóriára rá nyomva megjeleníti a kategória termékeit
+A Termék kategóriák automatikusan jelennek meg az adatbázis alapján és egy-egy kategóriára rá nyomva megjeleníti a kategória termékeit
 
 <img src="BoardGameStore\Images\Termekek.png" alt="Termék" title="Termék" text-align="center">
 
@@ -23,18 +23,18 @@ A kosárba rakhatunk/kivehetünk termékeket és az ár alapján kiszámítja a 
 
 ## Form kinézete
 
-Megrendélehez szükséges egy form kitöltése amely elmenti az adatokat az adatbázisba.
+Megrendeléshez szükséges egy form kitöltése, amely elmenti az adatokat az adatbázisba.
 
 <img src="BoardGameStore\Images\Form.png" alt="Form" title="Form" text-align="center">
 
 ## Regisztráció kinézete
 
-Létrehozhatunk egy fiókot is amelynek adatait az adatbázisba tároljuk.
+Létrehozhatunk egy fiókot is, amelynek adatait az adatbázisba tároljuk.
 
 <img src="BoardGameStore\Images\Regisztracio.png" alt="Regisztráció" title="Regisztráció" text-align="center">
 
 ## Bejelentkezés kinézete
 
-Be is tudunk jelentkezni Ha van érvényes fiókunk és az adatbázisban a regisztrációs adatok.
+Be is tudunk jelentkezni, Ha van érvényes fiókunk és az adatbázisban szerepelnek a regisztrációs adatok.
 
 <img src="BoardGameStore\Images\Bejelentkezes.png" alt="Bejelentkezés" title="Bejelentkezés" text-align="center">
